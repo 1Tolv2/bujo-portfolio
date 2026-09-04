@@ -29,10 +29,17 @@ export function HeroSection() {
           <Polaroid src={ProfilePicture} tapeStyle="top">
             <div className="flex gap-8 w-full justify-center items-center">
               <div className="size-10 rounded-full">
-                <img src={GithubIcon} alt="GitHub" />
+                <a href="https://github.com/1Tolv2" target="_blank">
+                  <img src={GithubIcon} alt="GitHub" />
+                </a>
               </div>
               <div className="size-10 rounded-full">
-                <img src={LinkedinIcon} alt="Linkedin" />
+                <a
+                  href="https://www.linkedin.com/in/sofia-johnsson-s-856308188/"
+                  target="_blank"
+                >
+                  <img src={LinkedinIcon} alt="Linkedin" />
+                </a>
               </div>
             </div>
           </Polaroid>
