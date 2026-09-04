@@ -7,9 +7,9 @@ const headerOptions = ["about", "projects", "contact"];
 const HeaderButton = ({ text, index }: { text: string; index: number }) => {
   return (
     <div className="pt-4">
-      <div className="flex flex-row items-center gap-2">
+      <div className="flex flex-row items-center lg:gap-2">
         {index !== 0 && (
-          <div className="size-2 rounded-full bg-cyan-500 mx-10 mt-1" />
+          <div className="size-2 rounded-full bg-cyan-500 mx-4 lg:mx-10 mt-1" />
         )}
         <p className="text-2xl font-bold">{text}</p>
       </div>
@@ -19,9 +19,9 @@ const HeaderButton = ({ text, index }: { text: string; index: number }) => {
 
 export function HomePage() {
   return (
-    <body className="md:w-full flex justify-between bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] md:mt-0 mt-6">
+    <body className="lg:w-full flex justify-between bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] lg:mt-0 mt-6">
       <main className="relative w-full min-h-screen">
-        <div className="fixed top-0 left-0 flex flex-row px-10 z-10">
+        <div className="fixed top-0 left-0 flex flex-row w-screen justify-center px-10 z-10">
           {headerOptions.map((option, index) => (
             <HeaderButton
               key={`header-${option}`}

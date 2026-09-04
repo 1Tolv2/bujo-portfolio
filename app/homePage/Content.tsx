@@ -8,8 +8,8 @@ import React from "react";
 
 export function Content() {
   return (
-    <div className="md:w-full flex justify-between bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] md:mt-0 mt-6">
-      <body className="min-h-screen md:px-36 md:py-16 md:pb-4 px-8 py-12 bg-[white] select-none md:w-6/12 md:pr-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></body>
+    <div className="lg:w-full flex justify-between bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] lg:mt-0 mt-6">
+      <body className="min-h-screen lg:px-36 lg:py-16 lg:pb-4 px-8 py-12 bg-[white] select-none lg:w-6/12 lg:pr-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></body>
     </div>
   );
 }

@@ -42,8 +42,8 @@ export function Polaroid({
   return (
     <div className="flex justify-center items-center">
       <div
-        className={`relative flex flex-col justify-between gap-6 bg-mist-50 rounded-sm drop-shadow-lg p-7
-            ${mode === "portrait" ? "w-sm h-130" : "w-xl h-110"}`}
+        className={`relative flex flex-col justify-between gap-6 bg-mist-50 rounded-sm drop-shadow-lg p-5 lg:p-7
+            ${mode === "portrait" ? "w-xs lg:w-sm h-120 lg:h-130" : "w-xl h-110"}`}
       >
         <Tape />
         <div className="w-full h-100 rounded-sm shadow-lg inverted-shadow overflow-hidden">
