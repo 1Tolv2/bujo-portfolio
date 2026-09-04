@@ -11,9 +11,9 @@
   {
     "color": "bg-mist-200",
     "title": "Photography Portfolio",
-    "body": "A progressive web app, PWA, that helps motorcyclists find parking in Stockholm City. Written in TypeScript with Next.js utilising Googles Maps JavaScript API and Stockholms Stads LvWS 4 API as well as their Parking API.",
+    "body": "A Next.js web app written in TypeScript which hosts both my software engineering portfolio as well as my art portfolio",
     "icon": "open_in_new.svg",
-    "tags": ["JavaScript", "Next.js", "PWA", "Tailwind"],
+    "tags": ["TypeScript", "Next.js", "Tailwind"],
     "link": "https://github.com/1Tolv2/photography-portfolio"
   },
   {
