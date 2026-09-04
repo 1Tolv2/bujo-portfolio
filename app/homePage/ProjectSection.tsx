@@ -36,9 +36,9 @@ export function ProjectSection() {
                     </div>
                   ))}
                 </div>
-                {/* <div className="flex w-fit bg-mist-200 p-1">
-                  <img src={item.icon} className="w-20 h-fit" />
-                </div> */}
+                <a href={item.link} target="_blank">
+                  <img src={item.icon} className="w-10 h-fit" />
+                </a>
               </div>
             </div>
           ))}
