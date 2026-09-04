@@ -1,48 +1,20 @@
 import { SectionHeader } from "~/components/SectionHeader";
 import DirectionIcon from "../components/images/directions.svg";
 import GhostIcon from "../components/images/ghost-svgrepo-com.svg";
+import { projectData, textContent } from "../data";
 
-const projectList = [
-  {
-    color: "bg-blue-200",
-    title: "MC-Parking PWA",
-    body: "A progressive web app, PWA, that helps motorcyclists find parking in Stockholm City. Written in TypeScript with Next.js utilising Googles Maps JavaScript API and Stockholms Stads LvWS 4 API as well as their Parking API.",
-    icon: GhostIcon,
-    tags: ["TypeScript", "Next.js", "PWA"],
-  },
-  {
-    color: "bg-mist-200",
-    title: "Photography Portfolio",
-    body: "A progressive web app, PWA, that helps motorcyclists find parking in Stockholm City. Written in TypeScript with Next.js utilising Googles Maps JavaScript API and Stockholms Stads LvWS 4 API as well as their Parking API.",
-    icon: GhostIcon,
-    tags: ["JavaScript", "Next.js", "PWA", "Tailwind"],
-  },
-  {
-    color: "bg-purple-200",
-    title: "Server Chat Web App",
-    body: "A PERN-stack web application with channels and servers, running sockets for updating of the chat feeds. The application can be run using docker compose or locally. Contains unit tests and github workflow.",
-    icon: GhostIcon,
-    tags: ["React", "Express.js", "PostgreSQL"],
-  },
-  {
-    color: "bg-orange-200",
-    title: "Vehicle Maintenance App",
-    body: "A React Native + Expo application for registering maintenance on you car och motorcycle. The backend is an Express REST API with a MongoDB database",
-    icon: DirectionIcon,
-    tags: ["React Native"],
-  },
-];
+const content = textContent.projectSection;
 
 export function ProjectSection() {
   return (
     <div className="w-full flex flex-col justify-center items-center mt-5 mb-50">
       <div className="flex flex-col gap-10 w-full max-w-[1800px] px-20">
         <SectionHeader number="02" color="bg-yellow-200">
-          projects
+          {content.projectTitle}
         </SectionHeader>
         {/* Project card box */}
         <div className="flex flex-wrap  gap-10">
-          {projectList.map((item) => (
+          {projectData.data.map((item) => (
             <div className="relative flex flex-col justify-between items-center max-w-100 border-2 border-mauve-800 p-5 pt-8 gap-6 grow">
               <div
                 className={`absolute -top-5 w-fit h-fit px-8 py-1 bg-mauve-900`}

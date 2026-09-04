@@ -1,0 +1,32 @@
+{"data": [
+    
+  {
+    "color": "bg-blue-200",
+    "title": "MC-Parking PWA",
+    "body": "A progressive web app, PWA, that helps motorcyclists find parking in Stockholm City. Written in TypeScript with Next.js utilising Googles Maps JavaScript API and Stockholms Stads LvWS 4 API as well as their Parking API.",
+    "icon": "../components/images/ghost-svgrepo-com.svg",
+    "tags": ["TypeScript", "Next.js", "PWA"]
+  },
+  {
+    "color": "bg-mist-200",
+    "title": "Photography Portfolio",
+    "body": "A progressive web app, PWA, that helps motorcyclists find parking in Stockholm City. Written in TypeScript with Next.js utilising Googles Maps JavaScript API and Stockholms Stads LvWS 4 API as well as their Parking API.",
+    "icon": "",
+    "tags": ["JavaScript", "Next.js", "PWA", "Tailwind"]
+  },
+  {
+    "color": "bg-purple-200",
+    "title": "Server Chat Web App",
+    "body": "A PERN-stack web application with channels and servers, running sockets for updating of the chat feeds. The application can be run using docker compose or locally. Contains unit tests and github workflow.",
+    "icon": "",
+    "tags": ["React", "Express.js", "PostgreSQL"]
+  },
+  {
+    "color": "bg-orange-200",
+    "title": "Vehicle Maintenance App",
+    "body": "A React Native + Expo application for registering maintenance on you car och motorcycle. The backend is an Express REST API with a MongoDB database",
+    "icon": "",
+    "tags": ["React Native"]
+  }
+]
+}

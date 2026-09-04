@@ -1,0 +1,17 @@
+{
+    "name": "Sofia Johnsson",
+    "title": "Software Engineer",
+    "introText": "Hi! Welcome to my portfolio, I'm a fullstack software engineer based in Stockholm.",
+    "aboutSection" :{
+        "aboutTitle": "about me",
+        "aboutText": [
+            "I'm a user experience obsessed full stack engineer, with a lot of love for writing clean dry-code. I thrive when I get to take on the full scope of a feature and follow projects from discovery and design to implementation.",
+            "At the moment I work as a Fullstack Software Engineer at Klarna where my focus is tokenized payments team, dealing both with the complex challenges of the purchase flow and the post purchase user experience. In my team my main responsibility is our user facing screens which include maintenance and keeping up with company wide initiatives. My backend work includes leading cross-team projects to enhance our feature.",
+            "In my free time I enjoy going on adventures with my motorcycles, whether it's track day or taking the nearest gravel roads to no where and camping out for the night. When it's raining I do prefer to go to my local climbing gym chilling at home and paint while watching a good based-on-a-true-story-movie."
+        ]
+    },
+    "projectSection": {
+        "projectTitle": "projects"
+    
+}
+}
