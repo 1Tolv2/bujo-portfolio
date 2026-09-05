@@ -1,5 +1,6 @@
 import { SectionHeader } from "~/components/SectionHeader";
 import { projectData, textContent } from "../data";
+import { Text } from "../components/basics";
 
 const content = textContent.projectSection;
 
@@ -15,12 +16,13 @@ export function ProjectSection() {
           {projectData.data.map((item) => (
             <div className="relative flex flex-col justify-between items-center max-w-100 border-2 border-mauve-800 p-5 pt-8 gap-6 grow">
               <div
-                className={`absolute -top-5 w-fit h-fit px-8 py-1 bg-mauve-900`}
+                className={`absolute -top-5 w-fit h-fit px-8 py-2 bg-mauve-900`}
               >
-                <p className="text-xl text-white">{item.title}</p>
+                {/* <p className="text-xl text-white">{item.title}</p> */}
+                <Text textColor="white">{item.title}</Text>
               </div>
-              <div className="w-full text-lg">
-                <p>{item.body}</p>
+              <div className="w-full">
+                <Text>{item.body}</Text>
               </div>
 
               <div className="flex flex-row justify-between w-full gap-4">
@@ -28,9 +30,9 @@ export function ProjectSection() {
                 <div className="flex flex-row flex-wrap w-full h-fit gap-2">
                   {item.tags.map((tag) => (
                     <div
-                      className={`px-2 rounded-sm ${item.color || "bg-amber-200"}`}
+                      className={`px-2 pb-0.5 rounded-sm ${item.color || "bg-amber-200"}`}
                     >
-                      <p>{tag}</p>
+                      <Text>{tag}</Text>
                     </div>
                   ))}
                 </div>

@@ -9,8 +9,6 @@
 
 .barlow-condensed {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 .barlow {
   font-family: 'Barlow', sans-serif;
@@ -42,8 +40,4 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-}
-
-p {
-  font-family: 'Barlow condensed', sans-serif;
 }

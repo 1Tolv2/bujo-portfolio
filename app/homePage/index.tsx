@@ -1,6 +1,7 @@
 import { AboutSection } from "./AboutSection";
 import { HeroSection } from "./HeroSection";
 import { ProjectSection } from "./ProjectSection";
+import { Text } from "../components/basics";
 
 const headerOptions = ["about", "projects", "contact"];
 
@@ -21,7 +22,7 @@ export function HomePage() {
   return (
     <body className="lg:w-full flex justify-between bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] lg:mt-0 mt-6">
       <main className="relative w-full min-h-screen">
-        <div className="fixed bg-white lg:bg-transparent top-0 left-0 flex flex-row w-screen justify-center px-10 pb-4 z-10">
+        <div className="fixed bg-white md:bg-transparent top-0 left-0 flex flex-row w-screen justify-center px-10 pb-4 z-10">
           {headerOptions.map((option, index) => (
             <HeaderButton
               key={`header-${option}`}
@@ -33,6 +34,12 @@ export function HomePage() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <footer className="w-full flex justify-center p-4">
+          <Text textColor="mist-400" textSize="lg">
+            Designed in Figma, this portfolio is built with React and Tailwind
+            CSS and deployed through vercel.
+          </Text>
+        </footer>
       </main>
     </body>
   );
