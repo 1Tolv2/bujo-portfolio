@@ -21,7 +21,7 @@ export function HomePage() {
   return (
     <body className="lg:w-full flex justify-between bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] lg:mt-0 mt-6">
       <main className="relative w-full min-h-screen">
-        <div className="fixed top-0 left-0 flex flex-row w-screen justify-center px-10 z-10">
+        <div className="fixed bg-white lg:bg-transparent top-0 left-0 flex flex-row w-screen justify-center px-10 pb-4 z-10">
           {headerOptions.map((option, index) => (
             <HeaderButton
               key={`header-${option}`}
