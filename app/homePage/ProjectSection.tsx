@@ -1,6 +1,4 @@
 import { SectionHeader } from "~/components/SectionHeader";
-import DirectionIcon from "../components/images/directions.svg";
-import GhostIcon from "../components/images/ghost-svgrepo-com.svg";
 import { projectData, textContent } from "../data";
 
 const content = textContent.projectSection;
@@ -8,12 +6,12 @@ const content = textContent.projectSection;
 export function ProjectSection() {
   return (
     <div className="w-full flex flex-col justify-center items-center mt-5 mb-50">
-      <div className="flex flex-col gap-10 w-full max-w-[1800px] px-6 lg:px-20">
+      <div className="flex flex-col gap-10 w-full max-w-[1800px] px-6 sm:px-20">
         <SectionHeader number="02" color="bg-yellow-200">
           {content.projectTitle}
         </SectionHeader>
         {/* Project card box */}
-        <div className="flex flex-wrap  gap-10">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-10">
           {projectData.data.map((item) => (
             <div className="relative flex flex-col justify-between items-center max-w-100 border-2 border-mauve-800 p-5 pt-8 gap-6 grow">
               <div
