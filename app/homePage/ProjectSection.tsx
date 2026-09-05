@@ -6,7 +6,7 @@ const content = textContent.projectSection;
 
 export function ProjectSection() {
   return (
-    <div className="w-full flex flex-col justify-center items-center mt-5 mb-50">
+    <div className="w-full flex flex-col justify-center items-center mt-10 mb-50">
       <div className="flex flex-col gap-10 w-full max-w-[1800px] px-6 sm:px-20">
         <SectionHeader number="02" color="bg-yellow-200">
           {content.projectTitle}
@@ -18,7 +18,6 @@ export function ProjectSection() {
               <div
                 className={`absolute -top-5 w-fit h-fit px-8 py-2 bg-mauve-900`}
               >
-                {/* <p className="text-xl text-white">{item.title}</p> */}
                 <Text textColor="white">{item.title}</Text>
               </div>
               <div className="w-full">
@@ -28,8 +27,9 @@ export function ProjectSection() {
               <div className="flex flex-row justify-between w-full gap-4">
                 {/* Tags box */}
                 <div className="flex flex-row flex-wrap w-full h-fit gap-2">
-                  {item.tags.map((tag) => (
+                  {item.tags.map((tag, index) => (
                     <div
+                      id={`project-${index}`}
                       className={`px-2 pb-0.5 rounded-sm ${item.color || "bg-amber-200"}`}
                     >
                       <Text>{tag}</Text>

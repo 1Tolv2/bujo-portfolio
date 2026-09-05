@@ -3,17 +3,19 @@ import { HeroSection } from "./HeroSection";
 import { ProjectSection } from "./ProjectSection";
 import { Text } from "../components/basics";
 
-const headerOptions = ["about", "projects", "contact"];
+const headerOptions = ["about", "projects"];
 
 const HeaderButton = ({ text, index }: { text: string; index: number }) => {
   return (
     <div className="pt-4">
-      <div className="flex flex-row items-center lg:gap-2">
-        {index !== 0 && (
-          <div className="size-2 rounded-full bg-cyan-500 mx-4 lg:mx-10 mt-1" />
-        )}
-        <p className="text-2xl font-bold">{text}</p>
-      </div>
+      <a href={`#${text}`}>
+        <div className="flex flex-row items-center lg:gap-2">
+          {index !== 0 && (
+            <div className="size-2 rounded-full bg-cyan-500 mx-4 lg:mx-10 mt-1" />
+          )}
+          <p className="text-2xl font-bold">{text}</p>
+        </div>
+      </a>
     </div>
   );
 };
@@ -32,7 +34,9 @@ export function HomePage() {
           ))}
         </div>
         <HeroSection />
+        <div id="about" className="mb-15" />
         <AboutSection />
+        <div id="projects" className="mb-15" />
         <ProjectSection />
         <footer className="w-full flex justify-center p-4">
           <Text textColor="mist-400" textSize="lg">

@@ -1,10 +1,11 @@
 type Props = {
+  id?: string;
   number: string;
   children: React.ReactNode;
   color?: string;
 };
 
-export function SectionHeader({ number, color, children }: Props) {
+export function SectionHeader({ id, number, color, children }: Props) {
   return (
     <div className="relative flex flex-row items-center mb-2 sm:mb-4 lg:mb-0 gap-4 lg:gap-8">
       <div className="flex justify-center items-center size-10 sm:size-14 lg:size-25 lg:mb-6 bg-black rounded-full">
