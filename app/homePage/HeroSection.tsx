@@ -19,14 +19,14 @@ export function HeroSection() {
           <div className="flex flex-col items-start justify-center gap-2">
             <p className="text-lg lg:text-3xl text-mist-700">
               Hi! Welcome to my portfolio, I'm a{" "}
-              <b className="text-cyan-500">fullstack software engineer</b> based
-              in Stockholm.
+              <b className="text-fuchsia-500">fullstack software engineer</b>{" "}
+              based in Stockholm.
             </p>
           </div>
           <div className="flex gap-8 w-full items-center mt-4">
             <a
               href="mailto:sofiaq1@gmail.com"
-              className="bg-green-200 py-2 px-4 drop-shadow-md"
+              className="bg-green-200 py-3 px-4 drop-shadow-md"
             >
               Contact me
             </a>

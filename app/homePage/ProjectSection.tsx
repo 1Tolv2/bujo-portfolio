@@ -13,8 +13,11 @@ export function ProjectSection() {
         </SectionHeader>
         {/* Project card box */}
         <div className="flex flex-wrap justify-center lg:justify-start gap-10">
-          {projectData.data.map((item) => (
-            <div className="relative flex flex-col justify-between items-center max-w-100 border-2 border-mauve-800 p-5 pt-8 gap-6 grow">
+          {projectData.data.map((item, index) => (
+            <div
+              key={`project-${index}`}
+              className="relative flex flex-col justify-between items-center max-w-100 border-2 border-mauve-800 p-5 pt-8 gap-6 grow"
+            >
               <div
                 className={`absolute -top-5 w-fit h-fit px-8 py-2 bg-mauve-900`}
               >
@@ -29,7 +32,7 @@ export function ProjectSection() {
                 <div className="flex flex-row flex-wrap w-full h-fit gap-2">
                   {item.tags.map((tag, index) => (
                     <div
-                      id={`project-${index}`}
+                      key={`project-${index}`}
                       className={`px-2 pb-0.5 rounded-sm ${item.color || "bg-amber-200"}`}
                     >
                       <Text>{tag}</Text>

@@ -10,7 +10,7 @@ const content = textContent.aboutSection;
 
 export function AboutSection() {
   return (
-    <div className="w-full flex flex-col justify-center items-center mt-5 mb-20 lg:mb-50">
+    <div className="w-full flex flex-col justify-center items-center mt-5 lg:mb-50">
       <div className="flex flex-col lg:flex-row items-center gap-6 w-full max-w-[1800px] px-6 sm:px-20">
         {/* pics */}
         <div className="hidden relative w-full lg:min-w-xl lg:w-1/2 xl:flex justify-center items-center">

@@ -34,14 +34,22 @@ export function HomePage() {
           ))}
         </div>
         <HeroSection />
-        <div id="about" className="mb-15" />
+        <div id="about" className="mb-24" />
         <AboutSection />
-        <div id="projects" className="mb-15" />
+        <div id="projects" className="pt-15" />
         <ProjectSection />
-        <footer className="w-full flex justify-center p-4">
-          <Text textColor="mist-400" textSize="lg">
-            Designed in Figma, this portfolio is built with React and Tailwind
-            CSS and deployed through vercel.
+        <footer className="w-full flex-col flex items-center p-4">
+          <Text textColor="mist-300" textSize="md">
+            Designed in Figma and built with React and Tailwind CSS and deployed
+            through vercel.
+          </Text>
+          <Text textColor="mist-300 underline" textSize="md">
+            <a
+              href="https://www.flaticon.com/free-icons/github"
+              title="github icons"
+            >
+              Github & LinkedIn icons created by Muhamad Ulum - Flaticon
+            </a>
           </Text>
         </footer>
       </main>
