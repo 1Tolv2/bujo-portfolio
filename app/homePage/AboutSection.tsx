@@ -1,8 +1,7 @@
 import TrackPicture from "../components/images/track.jpg";
 import ClimbPicture from "../components/images/climb.jpg";
 import ProfilePicture from "../components/images/IMG_9089.jpg";
-import { Polaroid } from "../components/Polaroid";
-import { SectionHeader } from "../components/SectionHeader";
+import { Polaroid, SectionHeader } from "../components";
 import { textContent } from "../data";
 import { Text } from "../components/basics";
 

@@ -1,9 +1,8 @@
-import { Section } from "../components/Section";
+import { Section, Polaroid } from "../components";
 import GithubIcon from "../components/images/github.png";
 import LinkedinIcon from "../components/images/linkedin.png";
 import ProfilePicture from "../components/images/IMG_9089.jpg";
-import { Polaroid } from "../components/Polaroid";
-import { textContent } from "~/data";
+import { textContent } from "../data";
 
 export function HeroSection() {
   return (
