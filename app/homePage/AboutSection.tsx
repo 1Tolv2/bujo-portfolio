@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import TrackPicture from "../components/images/track.jpg";
 import ClimbPicture from "../components/images/climb.jpg";
 import ProfilePicture from "../components/images/IMG_9089.jpg";
@@ -8,12 +10,19 @@ import { Text } from "../components/basics";
 const content = textContent.aboutSection;
 
 export function AboutSection() {
+  const [hover, setHover] = useState(false);
   return (
     <div className="w-full flex flex-col justify-center items-center mt-5 lg:mb-50">
       <div className="flex flex-col lg:flex-row items-center gap-6 w-full max-w-[1800px] px-6 sm:px-20">
         {/* pics */}
-        <div className="hidden relative w-full lg:min-w-xl lg:w-1/2 xl:flex justify-center items-center">
-          <div className="relative w-fit z-1 rotate-5 hover:translate-x-65 transition-all duration-400">
+        <div
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+          className="hidden relative w-full lg:min-w-xl lg:w-1/2 xl:flex justify-center items-center"
+        >
+          <div
+            className={`relative w-fit z-1 rotate-5 ${hover ? "translate-x-65" : ""} transition-all duration-400`}
+          >
             <Polaroid src={ClimbPicture} />
           </div>
           <div className="absolute top-5 left-0 w-fit -rotate-2">
