@@ -17,8 +17,7 @@ export function HeroSection() {
           </div>
           <div className="flex flex-col items-start justify-center gap-2">
             <p className="text-lg lg:text-3xl text-mist-700">
-              Hi! Welcome to my portfolio, I'm a{" "}
-              <b className="text-fuchsia-500">fullstack software engineer</b>{" "}
+              Hi! Welcome to my portfolio, I'm a fullstack software engineer
               based in Stockholm.
             </p>
           </div>
