@@ -9,14 +9,14 @@ export function HeroSection() {
     <Section>
       <div className="flex flex-col lg:flex-row lg:items-center gap-20 lg:gap-6 w-full max-w-[1800px] px-6 lg:px-20 lg:mt-0">
         {/* Left wrapper */}
-        <div className="min-h-screen flex flex-col justify-center max-w-120 lg:max-w-270 lg:w-1/2 h-full gap-2 lg:gap-4 px-2 lg:px-0">
+        <div className="min-h-svh flex flex-col justify-center max-w-120 lg:max-w-270 lg:w-1/2 h-full gap-2 lg:gap-4 px-2 lg:px-0">
           <div className="flex justify-start lg:justify-center">
-            <h1 className="relative z-1 barlow text-4xl md:text-6xl lg:text-8xl text-mauve-800">
+            <h1 className="relative z-1 barlow text-4xl md:text-6xl lg:text-8xl text-mauve-900">
               {textContent.name}
             </h1>
           </div>
           <div className="flex flex-col items-start justify-center gap-2">
-            <p className="text-lg lg:text-3xl text-mist-700">
+            <p className="text-lg lg:text-3xl text-mauve-900">
               Hi! Welcome to my portfolio, I'm a fullstack software engineer
               based in Stockholm.
             </p>
