@@ -5,14 +5,12 @@ type Props = {
 };
 
 export const Text = ({
-  textColor = "mauve-900",
-  textSize = "xl",
+  textColor = "text-mauve-900",
+  textSize = "text-xl",
   children,
 }: Props) => {
   return (
-    <p
-      className={`barlow-condensed font-normal text-${textSize} text-${textColor}`}
-    >
+    <p className={`barlow-condensed font-normal ${textSize} ${textColor}`}>
       {children}
     </p>
   );

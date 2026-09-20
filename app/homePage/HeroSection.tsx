@@ -25,7 +25,7 @@ export function HeroSection() {
           <div className="flex gap-8 w-full items-center mt-4">
             <a
               href="mailto:sofiaq1@gmail.com"
-              className="bg-green-200 py-3 px-4 drop-shadow-md"
+              className="bg-green-200 text-mauve-900 py-3 px-4 drop-shadow-md"
             >
               Contact me
             </a>

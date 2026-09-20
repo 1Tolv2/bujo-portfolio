@@ -14,7 +14,7 @@ export function SectionHeader({ id, number, color, children }: Props) {
         </p>
       </div>
       <div className="mb-2 lg:mb-6">
-        <h2 className="relative mb-1 lg:mb-4 kaushan-script-regular text-4xl sm:text-5xl lg:text-7xl">
+        <h2 className="text-mauve-900 relative mb-1 lg:mb-4 kaushan-script-regular text-4xl sm:text-5xl lg:text-7xl">
           {children}
         </h2>
         <div className={`grow h-1 lg:h-3 ${color || "bg-fuchsia-200"}`} />

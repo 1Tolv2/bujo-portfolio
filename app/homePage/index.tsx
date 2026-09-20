@@ -13,7 +13,7 @@ const HeaderButton = ({ text, index }: { text: string; index: number }) => {
           {index !== 0 && (
             <div className="size-2 rounded-full bg-cyan-500 mx-4 lg:mx-10 mt-1" />
           )}
-          <p className="text-2xl font-bold">{text}</p>
+          <p className="text-mauve-900 text-2xl font-bold">{text}</p>
         </div>
       </a>
     </div>
@@ -38,12 +38,12 @@ export function HomePage() {
         <AboutSection />
         <div id="projects" className="pt-15" />
         <ProjectSection />
-        <footer className="w-full flex-col flex items-center p-4">
-          <Text textColor="mist-300" textSize="md">
+        <footer className="w-full flex-col flex items-center text-center p-4">
+          <Text textColor="text-mist-400" textSize="text-md">
             Designed in Figma and built with React and Tailwind CSS and deployed
             through vercel.
           </Text>
-          <Text textColor="mist-300 underline" textSize="md">
+          <Text textColor="text-mist-400 underline" textSize="text-md">
             <a
               href="https://www.flaticon.com/free-icons/github"
               title="github icons"
